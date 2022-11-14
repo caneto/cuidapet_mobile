@@ -29,7 +29,7 @@ class _AuthHomePageState extends State<AuthHomePage> {
       }
     });
 
-    WidgetsBinding.instance?.addPostFrameCallback((_) { 
+    WidgetsBinding.instance.addPostFrameCallback((_) { 
       widget._authStore.loadUser();
     });
 
